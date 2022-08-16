@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#learn{
+    position: relative;
+}
+#learn::after{
+    position: absolute;
+    content: '';
+    inset: 0;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.1) 0%, rgba(6, 86, 155, 0.87) 100%);
+}
