@@ -826,11 +826,6 @@ video {
   background-color: transparent;
 }
 
-.bg-slate-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
 .bg-business {
   background-color: rgba(56, 133, 200, 0.6);
 }
@@ -951,11 +946,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .font-medium {
   font-weight: 500;
 }
@@ -1034,10 +1024,6 @@ video {
 
   .sm\:mt-0 {
     margin-top: 0px;
-  }
-
-  .sm\:mt-1 {
-    margin-top: 0.25rem;
   }
 
   .sm\:flex {
@@ -1132,39 +1118,19 @@ video {
     padding-right: 0px;
   }
 
-  .sm\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
-  .sm\:px-28 {
-    padding-left: 7rem;
-    padding-right: 7rem;
-  }
-
-  .sm\:px-36 {
-    padding-left: 9rem;
-    padding-right: 9rem;
-  }
-
-  .sm\:px-44 {
-    padding-left: 11rem;
-    padding-right: 11rem;
-  }
-
   .sm\:px-64 {
     padding-left: 16rem;
     padding-right: 16rem;
   }
 
-  .sm\:px-72 {
-    padding-left: 18rem;
-    padding-right: 18rem;
-  }
-
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .sm\:text-5xl {
@@ -1175,21 +1141,6 @@ video {
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
-  .sm\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .sm\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
   }
 
   .sm\:font-medium {
