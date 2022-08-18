@@ -8,9 +8,32 @@
     <link rel="shortcut icon" href="./src/images/Logo.svg"  type="image/x-icon">
     <title>Paylod - UI</title>
 </head>
-<body class="w-full sm:full">
-   <nav class="flex flex-row justify-between content-center text-xl capitalize p-6 width-full">
+<body class="w-full relative md:w-full">
+   <nav class="flex flex-row justify-between text-xl capitalize py-6 px-3 sm:p-6  width-full">
       <a href="#">  <img src="./src/images/Logo.svg" alt="payload ui logo" ></a>
+      
+      <!-- hamburger header -->
+       <!-- hamburger icon -->
+       <div class="flex flex-col space-y-1 z-50 sm:hidden justify-center  items-end mt-2" id="hamburger">
+        <span class="bg-black w-6 h-1 rounded" id="menu_top"></span>
+        <span class="bg-black w-6 h-1 rounded" id="menu_middle"></span>
+        <span class="bg-black w-6 h-1 rounded" id="menu_bottom"></span>
+    </div>
+             
+        <div class="hidden sm:hidden flex-col pt-16 overflow-y-hidden p-12 w-full bg-white inset-0 absolute" id="ham_menu">
+                 <!-- hamburger menu -->
+                <div id="ham_links" class="flex  flex-col space-y-9">
+                    <a href="#"><img src="./src/images/Logo.svg" alt="payload ui logo" ></a>
+                    <a href="#"  class="hover:text-lightBlue text-2xl font-medium">product</a>
+                    <a href="#" class="hover:text-lightBlue text-2xl font-medium">pricing</a>
+                    <a href="#"  class="hover:text-lightBlue text-2xl font-medium">for business</a>
+                    <a href="#"  class="hover:text-lightBlue text-2xl font-medium">for developers</a>
+                    <a href="#" class="font-medium text-3xl text-lightBlue border-2 border-solid border-lightBlue rounded-lg px-3 py-4 w-1/2 flex justify-center ">sign in</a>
+                <p class=" rounded-lg bg-lightBlue cursor-pointer text-white px-5 text-3xl py-3 hover:bg-hoverBlue">create account</p>
+                </div>
+        </div>
+      
+      <!-- main menu -->
         <div class="hidden sm:flex flex-row space-x-12 font-medium items-center ">
             <a href="#"  class="hover:text-lightBlue">product</a>
             <a href="#" class="hover:text-lightBlue">pricing</a>
@@ -112,7 +135,7 @@
     </div>
    </section>
 
-   <!-- section 3 -->
+   <!-- section 3 flexible payment -->
    <section class="bg-gray flex flex-col-reverse gap-y-16 sm:flex-row sm:space-x-12  sm:rounded-xl items-center px-6 py-12 sm:p-12 mt-16">
        <img src="./src/images/flexible_payment.svg" alt="customer service " class="rounded">
        <div>
@@ -130,7 +153,7 @@
        </div>
    </section>
 
-   <!-- section 4 -->
+   <!-- section 4 companies trust us-->
    <section class="mt-16 ">
       <div class="px-3 sm:px-0">
         <h1 class="text-lightBlue capitalize text-center text-4xl font-bold">
@@ -142,36 +165,40 @@
         </p>
       </div>
       <!-- gradient flex boxes -->
-       <div class="flex flex-col sm:flex-row space-y-12 sm:space-y-0 px-3  sm:space-x-6 w-full sm:w-full mt-16">
-           <div class="flex flex-col px-3 pb-2 sm:w-1/4 w-full  rounded-t-lg  justify-end " id="learn">
+       <div class="flex flex-col sm:flex-row space-y-12 sm:space-y-0 px-3 h-full sm:space-x-6 w-full sm:w-full mt-16">
+           <!-- box1 -->
+           <div class="flex flex-col px-3  pb-6 sm:w-1/4  w-full  rounded-t-lg text-white bg-cover justify-end " id="learn" style="background-image:url('./src/images/flexible_payment.svg') ; z-index: -2;">
                <h1 class="capitalize font-bold text-2xl ">startups</h1>
-               <p class="text-xl">Integrate the payload API’s into your
+               <p class="text-xl pt-1">Integrate the payload API’s into your
                     business, to process payments</p>
-                    <button class="border-2  border-white bg-transparent border-solid flex items-start w-2/4 ml-1 capitalize text 2xl">
+                    <button class="border-2  border-white bg-transparent border-solid flex items-start w-2/4 mt-3 p-2 rounded-lg  capitalize cursor-pointer ">
                         learn more
                     </button>
            </div>
-           <div class="flex flex-col px-3 pb-2 rounded-t-lg sm:w-1/4 w-full  justify-end"  id="learn">
+           <!-- box 2 -->
+           <div class="flex flex-col px-3 pb-6 rounded-t-lg sm:w-1/4 w-full text-white bg-cover justify-end"  id="learn" style="background-image:url('./src/images/flexible_payment.svg') ; z-index: -2;">
             <h1 class="capitalize font-bold text-2xl">e-commerce</h1>
-            <p class="text-xl">Integrate the payload API’s into your
+            <p class="text-xl pt-1">Integrate the payload API’s into your
                  business, to process payments</p>
-                 <button class="border-2  border-white bg-transparent border-solid flex items-start w-2/4 ml-1 capitalize text 2xl">
+                 <button class="border-2  border-white bg-transparent border-solid flex items-start w-2/4 mt-3 p-2 rounded-lg   capitalize ">
                      learn more
                  </button>
         </div>
-        <div class="flex flex-col px-3 pb-2 rounded-t-lg  sm:w-1/4 w-full   justify-end"  id="learn">
+        <!-- box 3 -->
+        <div class="flex flex-col px-3 pb-6 rounded-t-lg  sm:w-1/4 w-full  text-white bg-cover justify-end"  id="learn" style="background-image:url('./src/images/flexible_payment.svg') ; z-index: -2;">
             <h1 class="capitalize font-bold text-2xl">fintechs</h1>
-            <p class="text-xl">Integrate the payload API’s into your
+            <p class="text-xl pt-1">Integrate the payload API’s into your
                  business, to process payments</p>
-                 <button class="border-2  border-white bg-transparent border-solid flex items-start w-2/4 ml-1 capitalize text 2xl">
+                 <button class="border-2  border-white bg-transparent border-solid flex items-start w-2/4 mt-3 p-2 rounded-lg  capitalize ">
                      learn more
                  </button>
         </div>
-        <div class="flex flex-col px-3 pb-2 rounded-t-lg   sm:w-1/4 w-full  justify-end "  id="learn">
+        <!-- box 4 -->
+        <div class="flex flex-col px-3 pb-6 rounded-t-lg   sm:w-1/4 w-full text-white bg-cover justify-end "  id="learn" style="background-image:url('./src/images/flexible_payment.svg') ; z-index: -2;">
             <h1 class="capitalize font-bold text-2xl">saas</h1>
-            <p class="text-xl">Integrate the payload API’s into your
+            <p class="text-xl pt-1">Integrate the payload API’s into your
                  business, to process payments</p>
-                 <button class="border-2  border-white bg-transparent border-solid flex items-start w-2/4 ml-1 capitalize text 2xl">
+                 <button class="border-2  border-white bg-transparent border-solid flex items-start w-2/4 mt-3 p-2 rounded-lg capitalize ">
                      learn more
                  </button>
         </div>
@@ -277,5 +304,6 @@
     </div>
    </div>
    </footer>
+   <script src="./src/script.js"></script>
 </body>
 </html>
