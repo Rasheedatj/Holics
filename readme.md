@@ -88,6 +88,7 @@ btn.addEventListener('click', () =>{
 ### Author
 - Github [https://github.com/Rasheedatj]
 - Twitter - [@Rashedatj](https://www.twitter.com/Rashedatj)
+- Email -[jinaduikeoluwa@gmail.com] (https://jinaduikeoluwa@gmail.com)
 
 ### Acknowledgement
 - Ayodeji Omonijo designed the page
