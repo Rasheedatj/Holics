@@ -674,6 +674,18 @@ video {
   margin-top: 1rem;
 }
 
+.mt-\[1\.5\] {
+  margin-top: 1.5;
+}
+
+.mb-\[1\.5rem\] {
+  margin-bottom: 1.5rem;
+}
+
+.mt-\[2\] {
+  margin-top: 2;
+}
+
 .flex {
   display: flex;
 }
@@ -1330,6 +1342,10 @@ video {
 
   .md\:mb-\[1rem\] {
     margin-bottom: 1rem;
+  }
+
+  .md\:mt-\[1rem\] {
+    margin-top: 1rem;
   }
 
   .md\:flex {
