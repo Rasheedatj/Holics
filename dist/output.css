@@ -585,6 +585,11 @@ video {
   margin-bottom: 7rem;
 }
 
+.mx-\[1rem\] {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -603,11 +608,6 @@ video {
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-}
-
-.mx-\[1rem\] {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .mt-2 {
@@ -642,10 +642,6 @@ video {
   margin-top: -4rem;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
-}
-
 .mt-16 {
   margin-top: 4rem;
 }
@@ -672,6 +668,10 @@ video {
 
 .mt-\[30rem\] {
   margin-top: 30rem;
+}
+
+.mt-\[1rem\] {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -1236,8 +1236,8 @@ video {
   content: "";
   position: absolute;
   bottom: -2.5rem;
-  left: 6rem;
-  top: 1rem;
+  left: 7rem;
+  top: 5rem;
   right: 0rem;
   width: 1rem;
   background-color: #eee;
@@ -1274,6 +1274,13 @@ video {
   100% {
     transform: translateX(0%);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .slide p::before {
+    left: 6rem;
+    top: 1rem;
   }
 }
 
@@ -1477,6 +1484,10 @@ video {
     margin-top: 2rem;
   }
 
+  .sm\:mt-\[1rem\] {
+    margin-top: 1rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -1523,10 +1534,6 @@ video {
 
   .sm\:flex-row {
     flex-direction: row;
-  }
-
-  .sm\:flex-col {
-    flex-direction: column;
   }
 
   .sm\:flex-wrap {
@@ -1617,6 +1624,11 @@ video {
     padding-right: 0px;
   }
 
+  .sm\:py-\[20px\] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1635,6 +1647,10 @@ video {
     line-height: 2rem;
   }
 
+  .sm\:text-\[40px\] {
+    font-size: 40px;
+  }
+
   .sm\:text-\[30px\] {
     font-size: 30px;
   }
@@ -1646,10 +1662,6 @@ video {
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .sm\:text-\[40px\] {
-    font-size: 40px;
   }
 
   .sm\:font-medium {

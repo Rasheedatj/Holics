@@ -54,8 +54,8 @@
   content: "";
   position: absolute;
   bottom: -2.5rem;
-  left: 6rem;
-  top: 1rem;
+  left: 7rem;
+  top: 5rem;
   right: 0rem;
   width: 1rem;
   background-color: #eee;
@@ -74,5 +74,12 @@
   100% {
     transform: translateX(0%);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .slide p::before {
+    left: 6rem;
+    top: 1rem;
   }
 }
