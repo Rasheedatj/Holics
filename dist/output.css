@@ -1238,6 +1238,8 @@ video {
 
 .slide {
   width: 100%;
+  display: grid;
+  align-items: stretch;
 }
 
 .slide p::before {
