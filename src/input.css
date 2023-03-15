@@ -50,6 +50,19 @@
   animation: slideIn 750ms linear forwards;
 }
 
+.slide p::before {
+  content: "";
+  position: absolute;
+  bottom: -2.5rem;
+  left: 6rem;
+  top: 1rem;
+  right: 0rem;
+  width: 1rem;
+  background-color: #eee;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
 @keyframes slideIn {
   0% {
     transform: translateX(100%);
