@@ -49,13 +49,16 @@
 #ham_links {
   animation: slideIn 750ms linear forwards;
 }
+.slide {
+  width: 100%;
+}
 
 .slide p::before {
   content: "";
   position: absolute;
-  bottom: -2.5rem;
-  left: 7rem;
-  top: 5rem;
+  bottom: -1rem;
+  left: 3rem;
+  top: 1rem;
   right: 0rem;
   width: 1rem;
   background-color: #eee;
@@ -74,12 +77,5 @@
   100% {
     transform: translateX(0%);
     opacity: 1;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .slide p::before {
-    left: 6rem;
-    top: 1rem;
   }
 }
