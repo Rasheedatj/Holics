@@ -798,6 +798,10 @@ video {
   gap: 2rem;
 }
 
+.gap-\[3rem\] {
+  gap: 3rem;
+}
+
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1322,6 +1326,10 @@ video {
 
   .md\:mb-6 {
     margin-bottom: 1.5rem;
+  }
+
+  .md\:mb-\[1rem\] {
+    margin-bottom: 1rem;
   }
 
   .md\:flex {
